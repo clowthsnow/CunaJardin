@@ -1,6 +1,6 @@
 <?php
 require 'system/config.php';
-require 'system/core/Router.php';
+
 
 require_once './controladores/vistasControlador.php';
 
