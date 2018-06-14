@@ -1,0 +1,12 @@
+# Restringe acceso a directorios no deseados
+Options All -Indexes
+
+# Permite reescribir las peticiones URL
+RewriteEngine On
+
+# Si el archivo y la carpeta no existen hacer la siguiente reescritura
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirecciona todas las peticiones a index
+RewriteRule ^([a-zA-Z0-9/]+)$ index.php?vista=$1
